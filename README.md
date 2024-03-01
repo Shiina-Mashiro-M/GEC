@@ -1,1 +1,1 @@
-# Topology-preserving-Graph-Coarsening-An-Elementary-Collapse-based-Approach
+# Topology-preserving-Graph-Coarsening
