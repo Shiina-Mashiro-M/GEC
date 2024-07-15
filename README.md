@@ -23,7 +23,7 @@ Datasets used for case studies are uploaded to the “Graph_Making” folder.
 
 # Preprocess
 
-The datasets need to be preprocessed, since our paper only focuses on undirected simple graph. 
+The datasets need to be preprocessed, since our paper only focuses on undirected graph. 
 
 
 # Usage of Bottom-up GEC Algorithms
