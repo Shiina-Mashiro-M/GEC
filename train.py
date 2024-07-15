@@ -26,7 +26,6 @@ if __name__ == '__main__':
         os.mkdir(path)
     
     for dataname in ['Cora']:
-    # for dataname in ['dblp']:
         for rank in [1000]:
             # for v in [0.3, 0.5, 0.7, 0.8, 0.9]:
             for v in [0.5, 0.7, 0.8, 0.9]:
