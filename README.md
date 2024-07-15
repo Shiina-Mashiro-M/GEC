@@ -36,7 +36,7 @@ python Bottom_up_all_simplex.py
 
 The coarsened graphs will be stored in the “Reduced_Node_Data", the coarsend graph are saved in ".npy" format, each file contains a tuple (coarsened_dataset, mapping relationship).
 
-To run the training program, run the following command.
+To run the training program on GCN network, run the following command.
 
 ```
 python train.py
