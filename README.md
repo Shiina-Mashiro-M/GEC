@@ -11,7 +11,6 @@ Datasets used for performance studies.
 | DBLP | https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.CitationFull.html#torch_geometric.datasets.CitationFull |
 | Coauthor Physics | https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.Coauthor.html#torch_geometric.datasets.Coauthor |
 | Reddit | https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.Reddit.html#torch_geometric.datasets.Reddit |
-
 | OGBN-arxiv | https://ogb.stanford.edu/docs/nodeprop/#ogbn-products |
 | OGBN-products | https://ogb.stanford.edu/docs/nodeprop/#ogbn-products |
 | dblp-v7 | https://www.aminer.org/citation |
