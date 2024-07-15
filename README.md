@@ -39,6 +39,6 @@ The coarsened graphs will be stored in the “Reduced_Node_Data", the coarsend g
 To run the training program, run the following command.
 
 ```
-python Bottom_up_all_simplex.py
+python train.py
 ```
 
