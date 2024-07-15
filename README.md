@@ -28,7 +28,7 @@ The datasets need to be preprocessed, since our paper only focuses on undirected
 
 # Usage of Bottom-up GEC Algorithms
 
-Datasets need to be stored in the “dataset” folder. Please remember to change the "dataname" and the "ratio_list" in the python file to run on different dataset. To run the program, run the following command. 
+Datasets need to be stored in the “dataset” folder. Please remember to change the "dataname" and the "ratio_list" in the python file to run on different dataset and different coarsening ratio, respectively. To run the program, run the following command. 
 
 ```
 python Bottom_up_all_simplex.py
