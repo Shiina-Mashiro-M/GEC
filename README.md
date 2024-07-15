@@ -1,5 +1,5 @@
 # Topology-preserving-Graph-Coarsening
-# Datasets
+## Datasets
 
 Because some datasets used in the paper are too large to be uploaded to GitHub, we have summarized the links for the dataset in the table below.
 
@@ -21,12 +21,12 @@ Datasets used for performance studies.
 
 Datasets used for case studies are uploaded to the “Graph_Making” folder. 
 
-# Preprocess
+## Preprocess
 
 The datasets need to be preprocessed, since our paper only focuses on undirected graph. 
 
 
-# Usage of Bottom-up GEC Algorithms
+## Usage of Bottom-up GEC Algorithms
 
 Datasets need to be stored in the “dataset” folder. Please remember to change the "dataname" and the path of dataset to run on different dataset. For different coarsening ratio, please change the and the "ratio_list" in the python file. To run the program of Bottom-up GEC, run the following command. 
 
