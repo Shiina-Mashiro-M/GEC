@@ -522,8 +522,8 @@ def node_collapse(graph, node, simplexs, nodes_to_index, maximal_cliques, cnt, r
     #     print("node", node)
     #     print("mal_cliques", [c for c in nx.find_cliques(graph) if node in c])
     # print(n[node].train_node)
-    if len(list(graph.nodes())) <= max_cluster_size * recoil_percent:
-        return graph, simplexs, nodes_to_index, maximal_cliques, cnt, reduced_node_list, reduced_edge_list, q2, back_edges, simplex_list
+    # if len(list(graph.nodes())) <= max_cluster_size * recoil_percent:
+    #     return graph, simplexs, nodes_to_index, maximal_cliques, cnt, reduced_node_list, reduced_edge_list, q2, back_edges, simplex_list
     # print("vanishing", node, list(graph.neighbors(node))[0] )
     # n_neighbor = list(graph.neighbors(node))
     # reduced_node_list.append((node, n_neighbor[random.randint(0, len(n_neighbor)-1)]))
@@ -733,8 +733,8 @@ def edge_collapse(graph, nodes, simplexs, nodes_to_index, maximal_cliques, cnt, 
     # print(simplexs[0][1862])
     # print(graph.nodes())
     # print(graph.edges())
-    if len(list(graph.nodes())) <= max_cluster_size * recoil_percent:
-        return graph, simplexs, nodes_to_index, maximal_cliques, cnt, reduced_node_list, reduced_edge_list, back_edges, simplex_list
+    # if len(list(graph.nodes())) <= max_cluster_size * recoil_percent:
+    #     return graph, simplexs, nodes_to_index, maximal_cliques, cnt, reduced_node_list, reduced_edge_list, back_edges, simplex_list
     q1 = Queue()
     q2 = Queue()
     graph.remove_edge(nodes[0], nodes[1])
@@ -903,8 +903,8 @@ def simplex_collapse(graph, rank, nodes, simplexs, nodes_to_index, maximal_cliqu
     # print(simplexs[0][1862])
     # print(graph.nodes())
     # print(graph.edges())
-    if len(list(graph.nodes())) <= max_cluster_size * recoil_percent:
-        return graph, simplexs, nodes_to_index, maximal_cliques, cnt, reduced_node_list, reduced_edge_list, back_edges
+    # if len(list(graph.nodes())) <= max_cluster_size * recoil_percent:
+    #     return graph, simplexs, nodes_to_index, maximal_cliques, cnt, reduced_node_list, reduced_edge_list, back_edges
     q1 = Queue()
     q2 = Queue()
     simplex_list = []
