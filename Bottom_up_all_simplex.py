@@ -4,9 +4,9 @@ import torch.nn.functional as F
 from torch_geometric.utils import to_undirected, add_self_loops
 import logging
 import scipy.sparse as sp
-from graph_coarsening.coarsening_utils import *
+# from graph_coarsening.coarsening_utils import *
 import networkx as nx
-from find_maximal_clique import find_max_cliques, find_max_cliques_nx
+# from find_maximal_clique import find_max_cliques, find_max_cliques_nx
 from torch_geometric.datasets import Coauthor
 from torch_geometric.datasets import CitationFull
 import random
@@ -29,8 +29,37 @@ from torch_geometric.data import InMemoryDataset
 from ogb.utils.url import decide_download, download_url, extract_zip
 from ogb.io.read_graph_pyg import read_graph_pyg, read_heterograph_pyg
 from ogb.io.read_graph_raw import read_node_label_hetero, read_nodesplitidx_split_hetero
-from find_maximal_clique import find_max_cliques
 import psutil
+
+def find_max_cliques_nx(graph, giveup_size): 
+    # OtN = {}
+    # NtO = {}
+    # for i, node in enumerate(list(graph)):
+    #     OtN[node] = i+1
+    #     NtO[i+1] = node
+    # new_graph = nx.relabel_nodes(graph, OtN)
+    # num_node = len(new_graph)
+    # C = [0 for _ in range(num_node + 1)]
+    # C, res = pivoter(new_graph, C)
+    # for i in range(num_node + 1):
+    #     if (C[i]):
+    #         print(i, C[i])
+    res = []
+    cnt_clique = 0
+    for clique in nx.find_cliques(graph):
+        if len(clique) > 1:
+            res.append(list(clique))
+            cnt_clique += 1
+            if cnt_clique > giveup_size:
+                break
+    for i in range(len(res)):
+        res[i].sort()
+    # for i in range(len(res)):
+    #     for j in range(len(res[i])):
+    #         res[i][j] = NtO[res[i][j]]
+    #     res[i].sort()
+    # print(res)
+    return res
 
 
 def one_hot(x, class_count):
